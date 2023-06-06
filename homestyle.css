@@ -1,0 +1,126 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(124, 217, 186);
+}
+
+nav
+{
+    height: 75px;
+    width: 100%;
+    padding: 0px 100px;
+    line-height: 75px;
+    position: fixed;
+    background-image: linear-gradient(#033747, #012733);
+}
+nav .logo h1
+{
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    float: left;
+    padding-top: 20px;
+    letter-spacing: 1.5px;
+}
+nav .logo h1:hover
+{
+    color: aquamarine;
+}
+nav ul
+{
+    float: right;
+}
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li a
+{
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+    padding: 0px 30px;
+    text-decoration: solid;
+
+}
+nav li a:hover
+{
+    color: orange;
+}
+.bg img
+{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+/* nav button
+{
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    text-transform: uppercase;
+
+
+} */
+#head
+{
+    margin-top: 45px;
+    font-size: 25px;
+    padding: 10px 5px 10px 5px;
+   text-align: center;
+   background-color: burlywood;
+    /* background-image: url(venkatesh_II.jpeg); */
+}
+.Mobclass
+{
+    margin-left: 75px;
+    
+}
+img
+{
+    margin-right: 400px;
+    height: 250px;
+    width: 350px;
+    float: right;
+    border-radius: 15px;
+    border-width: 5px;
+    border-color: #0088a9;
+}
+#Mob
+{
+    margin-top: 15px;
+    color: #419c0c;
+}
+
+.Emailclass
+{
+    margin-top: 95px;
+    margin-left: 75px;
+}
+#Email
+{
+    margin-top: 15px;
+    color: #419c0c;
+}
+button
+{
+    background-color: #0088a9;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 9px 25px;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    
+}
+    
+
+    

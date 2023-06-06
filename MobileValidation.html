@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Number Validation</title>
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<style>
+     #h{
+        background-color: blue;
+     }
+</style>
+<body style="background-color: rgb(207, 213, 218);">
+
+    <script>
+        function myfunction()
+        {
+            var a = document.getElementById("mob").value;
+
+            if(a=="")
+            {
+                document.getElementById("message").innerHTML =  "Please Enter your Number"
+                alert("Enter your number")
+                return false;
+            }
+
+            if(isNaN(a))
+            {
+                document.getElementById("message").innerHTML = "Enter Only numeric value"
+                alert("Numeric val only....")
+                return false;
+            }
+
+            if(a.length<10)
+            {
+                document.getElementById("message").innerHTML = "Mobile number must be of 10 digits"
+                alert("Mobile number must be of 10 digits")
+                return false;
+            }
+
+            if(a.length>10)
+            {
+                document.getElementById("message").innerHTML = "Mobile number must be of 10 digits"
+                alert("Mobile number must be of 10 digits")
+                return false;
+            }
+
+            if(a.charAt(0)!=9  && a.charAt(0)!=8  && a.charAt(0)!=7  && a.charAt(0)!=6)
+            {
+                document.getElementById("message").innerHTML = "Enter a Indian Number"
+                alert("Enter a Indian Number")
+
+                return false;
+            }
+            else{
+                document.getElementById("message").innerHTML = "The number validation is successfully completed"
+
+                return false;
+            }
+
+
+        }
+    </script>
+
+    <h1 id="h" style="background-color: aquamarine; color: tomato; text-align: center;"> Mobile validation using javascript</h1>
+    <form onsubmit="return myfunction()" style="color: blueviolet; text-align: center; margin-top: 45px;"> 
+        <div class="class1">
+            Mobile Number: <input type="text" id="mob" placeholder="mob no" value=""><br><br>
+        </div>
+       
+        <div class="class2">
+            <input id="button" type="submit"  value="submit"><br><br>
+            <span id="message" style="color: red;"></span>
+        </div>
+        <div class="Mobile">
+            <img src="Mobile.png" alt="">
+        </div>
+    </form>
+
+    
+
+    
+    
+</body>
+</html>
